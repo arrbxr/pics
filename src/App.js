@@ -16,8 +16,9 @@ class App extends Component {
     return (
       <div className="ui container" style={{ marginTop: 10 }}>
         <SearchBar onSubmit={this.onSearchSubmit} />
-        Found: {this.state.images.length} images
+		<p style={{color: 'red', textAlign: "center"}}>Created By :- Abhishek Raj Ravi</p>
         <ImageList images={this.state.images} />
+		<p style={{color: 'red', textAlign: "center"}}>{new Date().toString().split(' ').splice(1,3).join(' ')}</p>
       </div>
     );
   }

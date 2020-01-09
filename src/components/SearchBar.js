@@ -19,15 +19,14 @@ class SearchBar extends Component {
             <strong>Image Search</strong>
           </label>
           <input
+		
             className="field"
             type="text"
             value={this.state.term}
             onChange={e => this.setState({ term: e.target.value })}
           />
         </form>
-        {/* <h1>
-          Hi You Type:- <span style={{ color: "red" }}>{this.state.term}</span>
-        </h1> */}
+        
       </div>
     );
   }
